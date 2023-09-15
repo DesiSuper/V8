@@ -1,6 +1,6 @@
 class script(object):
     START_TXT = """Hello {},
-My Name Is <a href=https://t.me/PostQutoBot>Kajal Shukla</a>,  Just Add Me To Your Group And Enjoy... """
+My Name Is <a href=https://t.me/RdxTvBot>Kajal Shukla</a>,  Just Add Me To Your Group And Enjoy... """
     LZTHMB_TEXT = """Hello {},
 Glad to see you here. It seems that you really love <a href=https://t.me/LazyDeveloperr >LazyDeveloper's</a> work.\n\n<b>Thumbnail extracting</b> feature will be available soon, please join <a href=https://t.me/LazyDeveloper>Dev Channel</a> and stay tuned for next <a href=https://t.me/LazyDeveloper>update</a>.\n\n  🐞 Report Bug here: <a href=http://t.me/LazyDeveloperSupport>LazyDev Support</a>
     """
@@ -16,7 +16,7 @@ Thanks for thinking about us.\nIt seems that you really love <a href=https://t.m
     ALRDY_UPLDD_TEXT = """✅ Content is already uploaded.\n\nName:{}\nPlease make sure about your spelling before submiting request..."""
     HELP_TXT = """𝙷𝙴𝚈 {}
 Here is the help for my COMMANDS."""
-    ABOUT_TXT = """🦅 Name: <a href=https://t.me/PostQutoBot>Kajal Shukla</a>
+    ABOUT_TXT = """🦅 Name: <a href=https://t.me/RdxTvBot>Kajal Shukla</a>
 🦹 Creator: <a href=https://t.me/YourX>YourX</a>
 🤖 Version: 2.0 ⚡ """
     MANUELFILTER_TXT = """Help: <b>Filters</b>
