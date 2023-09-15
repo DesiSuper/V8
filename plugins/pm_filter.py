@@ -671,7 +671,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/PostQutoBot?startgroup=true')
+            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/RdxTvBot?startgroup=true')
         ], [
             InlineKeyboardButton('🙋🏻‍♀️ Help', callback_data='help'),
             InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
@@ -958,7 +958,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.delete()
         except Exception as e:
             print(e)  # print the error message
-            await query.answer(f"☣something went wrong sweetie\n\n{e}", show_alert=True)
+            await query.answer(f"🫣something went wrong\n\n{e}", show_alert=True)
             return
         
     elif query.data == "coct":
@@ -1112,10 +1112,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
     #         parse_mode=enums.ParseMode.HTML
     #     )
     elif query.data == "exit":
-        await query.answer("Sorry Darling! You can't make any changes...\n\nOnly my Admin can change this setting...", show_alert = True)
+        await query.answer("You can't make any changes...\n\nOnly my Admin can change this setting...", show_alert = True)
         return
     elif query.data == "invalid_index_process":
-        await query.answer("Hey sweetie, please send me the last media with quote from your group.\nAnd also make sure that i am admin in your beloved group...")
+        await query.answer("Please send me the last media with quote from your group.\nAnd also make sure that i am admin in your beloved group...")
         return
     # elif query.data == "already_uploaded":
     #     if query.from_user.id not in ADMINS:
@@ -1563,7 +1563,7 @@ async def advantage_spell_chok(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
-        k = await msg.reply("The requested content is currently unavailable in our database, have some patience 🥹 - our admin will upload it as soon as possible \n\nDiscuss issue with admin here 👉  <a href='https://t.me/PostWild'>Discuss Here</a> ⚡ ")
+        k = await msg.reply("The requested content is currently unavailable in our database, have some patience 🥹 - our admin will upload it as soon as possible \n\nDiscuss issue with admin here 👉  <a href='https://t.me/PostWild'>Here</a> ⚡ ")
         await asyncio.sleep(10)
         await k.delete()
         return
@@ -1575,7 +1575,7 @@ async def advantage_spell_chok(msg):
         )
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
-    await msg.reply("Hey did you checked your spelling properly, here are some suggestions for you, please check if your requested content match anyone of these following suggestions...\n\nDiscuss issue with admin here 👉 <a href='https://t.me/PostWild'>Discuss Here</a> ⚡ ",
+    await msg.reply("Hey did you checked your spelling properly, here are some suggestions for you, please check if your requested content match anyone of these following suggestions...\n\nDiscuss issue with admin here 👉 <a href='https://t.me/PostWild'>Here</a> ⚡ ",
                     reply_markup=InlineKeyboardMarkup(btn))
 
 
