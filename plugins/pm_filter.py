@@ -1058,7 +1058,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "lazyhome":
         text = f"""\n\n**Please tell, what should i do with this file.?**\n"""
-        buttons = [[ InlineKeyboardButton("✍️ Renaming 🐧", callback_data="rename") ],
+        buttons = [[ InlineKeyboardButton('▶ Gen Stream / Download Link', callback_data=f'generate_stream_link') ],
                            [ InlineKeyboardButton("🙅 Close 🙈", callback_data="cancel") ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
