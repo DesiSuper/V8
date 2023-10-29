@@ -93,7 +93,7 @@ async def send_for_index(bot, message):
             filename = file.file_name
             filesize = humanize.naturalsize(file.file_size) 
             buttons = [
-                [ InlineKeyboardButton("✍️ Renaming 🐧", callback_data="rename") ],
+                [ InlineKeyboardButton('▶ Gen Stream / Download Link', callback_data=f'generate_stream_link') ],
                 [ InlineKeyboardButton('⚡Indexing 🦹',callback_data=f'index#accept#{chat_id}#{last_msg_id}#{message.from_user.id}')],
                 [ InlineKeyboardButton('🙅 Close 🙈', callback_data='cancel'),]
             ]
@@ -142,7 +142,7 @@ async def send_for_index(bot, message):
         if message.from_user.id in LAZY_RENAMERS:
             k = await message.reply('🎉\n\n\n❤️ Thank You For the Contribution, Wait For My Moderators to verify the files.\n\n\n🎁')
             buttons = [
-                        [InlineKeyboardButton("✍️ Renaming 🐧", callback_data="rename") ],
+                        [InlineKeyboardButton('▶ Gen Stream / Download Link', callback_data=f'generate_stream_link') ],
                         [InlineKeyboardButton('🙅 Close 🙈', callback_data='cancel')]]
             reply_markup = InlineKeyboardMarkup(buttons)
             file = getattr(message, message.media.value)
@@ -157,7 +157,7 @@ async def send_for_index(bot, message):
         else :      
             await message.reply('🎉\n\n\n❤️ Thank You For the Contribution, Wait For My Moderators to verify the files.\n\n\n🎁')
             buttons = [
-                        [InlineKeyboardButton("✍️ Renaming 🐧", callback_data="requireauth") ],
+                        [InlineKeyboardButton("▶ Gen Stream / Download Link", callback_data="requireauth") ],
                         [InlineKeyboardButton('🙅 Close 🙈', callback_data='cancel')]]
             reply_markup = InlineKeyboardMarkup(buttons)
             file = getattr(message, message.media.value)
